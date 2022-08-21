@@ -99,7 +99,7 @@ brew install ruby @2.7
 which ruby
 ```
 
-- If you see `/usr/bin/ruby` when you use the which command, then the initial installation has failed. It is the pre-installed macOS system Ruby.
+If you see `/usr/bin/ruby` when you use the which command, then the initial installation has failed. It is the pre-installed macOS system Ruby.
 
 3. Install the bundler gem.
 
@@ -119,7 +119,7 @@ bundle install
 npm run start
 ```
 
-- Enter `http://localhost:3000` in your browser and [everything should work!](https://replayable.io/share/AlgdZGgYZooiVTbtoHg)
+Enter `http://localhost:3000` in your browser and [everything should work!](https://replayable.io/share/AlgdZGgYZooiVTbtoHg)
 
 **Windows users**:
 
@@ -164,7 +164,7 @@ npm install
 npm run start
 ```
 
-- Enter `http://localhost:3000` in your browser and [everything should work](https://replayable.io/replay/6301e1e414ebd00066b58470/?share=dBEQn0RalVkM16fxamUw)!
+Enter `http://localhost:3000` in your browser and [everything should work](https://replayable.io/replay/6301e1e414ebd00066b58470/?share=dBEQn0RalVkM16fxamUw)!
 
 ## Building locally
 
