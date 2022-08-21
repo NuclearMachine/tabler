@@ -85,7 +85,7 @@ npm install
 
 2. For security and ease of installation, avoid the pre-installed version of Ruby that comes with macOS. Use a version manager such as [rbenv](https://collectionbuilder.github.io/cb-docs/docs/software/ruby_mac/), or [RVM](https://rvm.io/rvm/install).
 
-  You can also install Ruby via Homebrew. The recommended Ruby version is 2.7.*
+	You can also install Ruby via Homebrew. The recommended Ruby version is 2.7.*
 
 ```shell
 brew install ruby @2.7
