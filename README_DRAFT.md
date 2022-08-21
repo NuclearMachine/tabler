@@ -66,21 +66,20 @@ Support this project by becoming a sponsor. Your logo will show up in this READM
 
 ## Setup environment
 
-To use our build system and run our documentation locally, you'll need a copy of Tabler's source files. Follow the steps below:
+To run this app locally, you'll first need a copy of Tabler's source files. Clone this repo and follow the steps below:
+
+**General**
 
 1. [Install Node.js](https://nodejs.org/download/), which we use to manage our dependencies. We recommend using a version manager like [NVM](https://github.com/nvm-sh/nvm) to install Node.js.
-
 2. Navigate to the root `/tabler` directory and run `npm install` to install our local dependencies listed in `package.json`.
+3. [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/) - the recommended version is [2.7.6](https://cache.ruby-lang.org/pub/ruby/2.7/ruby-2.7.6.tar.gz).
+4. [Install Bundler](https://bundler.io) with `gem install bundler` and finally run `bundle install`. It will install all Ruby dependencies, including [Jekyll and plugins](https://jekyllrb.com).
 
-3. [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/) - the recommended version is [2.7.6](https://cache.ruby-lang.org/pub/ruby/2.7/ruby-2.7.6.tar.gz). 
+**MacOS users**:
 
-4. [Install Bundler](https://bundler.io) with `gem install bundler` and finally run `bundle install`. It will install all Ruby dependencies, such as [Jekyll and plugins](https://jekyllrb.com).
+1. Make sure you have node installed. Enter the project directory and install dependencies via NPM.
 
-**OSX users**:
-
-1. Enter the project directory and install dependencies via NPM.
-
-```
+```shell
 npm install
 ```
 
@@ -88,15 +87,13 @@ npm install
 
 You can also install Ruby via Homebrew. The recommended Ruby version is 2.7.*
 
-```
+```shell
 brew install ruby @2.7
 ```
 
-Don't forget to [apply ruby to your shell path and restart the terminal](https://replayable.io/replay/62febe988c7631006765f9f3/?share=0loEq8x5fw5qeJyP9ALO8A).
+Don't forget to [apply ruby to your shell path and restart the terminal](https://replayable.io/replay/62febe988c7631006765f9f3/?share=0loEq8x5fw5qeJyP9ALO8A). Let's do a [sanity check.](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ).
 
-Let's do a [sanity check!](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ).
-
-```
+```shell
 which ruby
 ```
 
@@ -104,19 +101,19 @@ If you see `/usr/bin/ruby` when you use the which command, then the initial inst
 
 3. Install the bundler gem.
 
-```
+```shell
 gem install bundler
 ```
 
 4. Install project gem dependencies via bundler.
 
-```
+```shell
 bundle install
 ```
 
-5. Run NPM
+5. Finally, launch the app.
 
-```
+```shell
 npm run start
 ```
 
@@ -124,31 +121,54 @@ Enter `http://localhost:3000` in your browser and [everything should work!](http
 
 **Windows users**:
 
-1. [Install Git SCM](https://git-scm.com/download/win). Take note of the installation directory eg: `C:\Program Files\git\bin`.
+1. [Install Git SCM](https://git-scm.com/download/win). And take note of the installation directory. By default it's `C:\Program Files\Git`.
 
-directory and run `npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"` to change the default shell.
-vhjvbhvhgv
-2. [Install Ruby+Devkit](https://rubyinstaller.org/downloads/) - the recommended version is [2.7.6](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.6-1/rubyinstaller-devkit-2.7.6-1-x64.exe).
+2. Install [NodeJS & NPM](https://nodejs.org/en/download/).
 
-3. [Read guide](https://jekyllrb.com/docs/installation/windows/) to get Jekyll up and running without problems.
+3. By default, NPM is set to CMD. [Configure NPM to use bash](https://replayable.io/replay/6301bdb7c417160066fb88e3/?share=jKEugkJ23Fe3dANIt2s8nA) which comes with Git SCM. Double-check the noted installation directory from step 1.
 
-Once you complete the setup, you'll be able to run the various commands provided from the command line.
+```shell
+npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"
+```
+
+4. [Install Ruby+Devkit](https://rubyinstaller.org/downloads/) - the recommended version is [2.7.6](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.6-1/rubyinstaller-devkit-2.7.6-1-x64.exe).
+
+On the last stage of the installation wizard, [rdk install should be checked by default. Hit enter when prompted](https://replayable.io/replay/6301cfb5c9b98e006759ec55/?share=lNypRQvCQBmwcOu8GFpdYQ), don't specify which component to install.
+
+5. Install bundler and jekyll gems.
+
+```
+gem install jekyll bundler
+```
+
+Check if Jekyll has been installed properly by [entering `jekyll -v`](https://replayable.io/replay/6301d641c9b98e006759ec56/?share=Krqcj3vLWFSosyUgHzA4vA).
 
 
-## Build locally
+6. Enter the project directory and install project gem dependencies via bundler.
 
-You need to have `npm` and `bundler` installed.
+```shell
+bundle install
+```
 
-1. From the root `/tabler` directory, run installation in the command line:
-  - `npm install` 
-  - `bundler install` 
-2. Then execute `npm run start-plugins` to start up the application stack.
-3. Open [http://localhost:3000](http://localhost:3000) in your browser, and voilà.
-4. Any change in the `/src` directory will build the application and refresh the page.
+7. Install npm packages.
 
-**Note**:
-Run `npm run build` for reforms a one off build application without refresh.
-Open [http://localhost:3001](http://localhost:3001) to configure the Web server.
+```shell
+npm install
+```
+
+8. Finally, launch the app.
+
+```shell
+npm run start
+```
+
+Enter `http://localhost:3000` in your browser and [everything should work!](https://replayable.io/replay/6301e1e414ebd00066b58470/?share=dBEQn0RalVkM16fxamUw).
+
+## Building locally
+
+If you want to build locally, then execute `npm run start-plugins` to start up the application stack versus `npm run start`. That way any change in the `/src` directory will build the application and refresh the page. Open [http://localhost:3001](http://localhost:3001) if you want to configure the web server.
+
+Running `npm run build` will [generate a local folder](https://replayable.io/replay/6301ea446a92ca00686c2470/?share=8BoFw4QCovXc4fFaY68v0w) called demo so you can run the app independently.
 
 ## Installation
 
