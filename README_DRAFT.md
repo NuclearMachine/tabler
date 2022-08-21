@@ -93,7 +93,7 @@ brew install ruby @2.7
 
 Don't forget to [apply ruby to your shell path](https://replayable.io/replay/62febe988c7631006765f9f3/?share=0loEq8x5fw5qeJyP9ALO8A) and restart the terminal.
 
-Let's first do a [sanity check!](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ).
+Let's first do a [sanity check](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ)!
 
 ```shell
 which ruby
@@ -125,7 +125,7 @@ Enter `http://localhost:3000` in your browser and [everything should work!](http
 
 1. [Install Git SCM](https://git-scm.com/download/win). And take note of the installation directory. By default it's `C:\Program Files\Git`.
 
-2. Install [NodeJS & NPM](https://nodejs.org/en/download/).
+2. Install [Node.js & NPM](https://nodejs.org/en/download/).
 
 3. By default, NPM is set to CMD. [Configure NPM to use bash](https://replayable.io/replay/6301bdb7c417160066fb88e3/?share=jKEugkJ23Fe3dANIt2s8nA) which comes with Git SCM. Double-check the noted installation directory from step 1.
 
@@ -135,7 +135,7 @@ npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"
 
 4. [Install Ruby+Devkit](https://rubyinstaller.org/downloads/) - the recommended version is [2.7.6](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.6-1/rubyinstaller-devkit-2.7.6-1-x64.exe).
 
-On the last stage of the installation wizard, [rdk install should be checked by default. Hit enter when prompted](https://replayable.io/replay/6301cfb5c9b98e006759ec55/?share=lNypRQvCQBmwcOu8GFpdYQ), don't specify which component to install.
+On the last stage of the installation wizard, [rdk install should be checked](https://replayable.io/replay/6301cfb5c9b98e006759ec55/?share=lNypRQvCQBmwcOu8GFpdYQ) by default. Hit enter when prompted and don't specify which component to install.
 
 5. Install bundler and jekyll gems.
 
@@ -164,7 +164,7 @@ npm install
 npm run start
 ```
 
-Enter `http://localhost:3000` in your browser and [everything should work!](https://replayable.io/replay/6301e1e414ebd00066b58470/?share=dBEQn0RalVkM16fxamUw).
+Enter `http://localhost:3000` in your browser and [everything should work](https://replayable.io/replay/6301e1e414ebd00066b58470/?share=dBEQn0RalVkM16fxamUw)!
 
 ## Building locally
 
