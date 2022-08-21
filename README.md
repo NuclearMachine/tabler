@@ -64,11 +64,11 @@ Support this project by becoming a sponsor. Your logo will show up in this READM
 <a href="https://opencollective.com/tabler/tiers/sponsor/9/website" target="_blank"><img src="https://opencollective.com/tabler/tiers/sponsor/9/avatar.svg" /></a>
 
 
-## Setup environment
+## Getting Started
 
 To run this app locally, you'll first need a copy of Tabler's source files. Clone this repo and follow the steps below:
 
-**General**
+**General**:
 
 1. [Install Node.js](https://nodejs.org/download/), which we use to manage our dependencies. We recommend using a version manager like [NVM](https://github.com/nvm-sh/nvm) to install Node.js.
 2. Navigate to the root `/tabler` directory and run `npm install` to install our local dependencies listed in `package.json`.
@@ -85,21 +85,21 @@ npm install
 
 2. For security and ease of installation, avoid the pre-installed version of Ruby that comes with macOS. Use a version manager such as [rbenv](https://collectionbuilder.github.io/cb-docs/docs/software/ruby_mac/), or [RVM](https://rvm.io/rvm/install).
 
-You can also install Ruby via Homebrew. The recommended Ruby version is 2.7.*
+  You can also install Ruby via Homebrew. The recommended Ruby version is 2.7.*
 
 ```shell
 brew install ruby @2.7
 ```
 
-Don't forget to [apply ruby to your shell path](https://replayable.io/replay/62febe988c7631006765f9f3/?share=0loEq8x5fw5qeJyP9ALO8A) and restart the terminal.
+  Don't forget to [apply ruby to your shell path](https://replayable.io/replay/62febe988c7631006765f9f3/?share=0loEq8x5fw5qeJyP9ALO8A) and restart the terminal.
 
-Let's first do a [sanity check](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ)!
+  Let's first do a [sanity check](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ)!
 
 ```shell
 which ruby
 ```
 
-If you see `/usr/bin/ruby` when you use the which command, then the initial installation has failed. It is the pre-installed macOS system Ruby.
+  If you see `/usr/bin/ruby` when you use the which command, then the initial installation has failed. It is the pre-installed macOS system Ruby.
 
 3. Install the bundler gem.
 
@@ -119,7 +119,7 @@ bundle install
 npm run start
 ```
 
-Enter `http://localhost:3000` in your browser and [everything should work!](https://replayable.io/share/AlgdZGgYZooiVTbtoHg)
+  Enter `http://localhost:3000` in your browser and [everything should work!](https://replayable.io/share/AlgdZGgYZooiVTbtoHg)
 
 **Windows users**:
 
@@ -135,7 +135,7 @@ npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"
 
 4. [Install Ruby+Devkit](https://rubyinstaller.org/downloads/) - the recommended version is [2.7.6](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.6-1/rubyinstaller-devkit-2.7.6-1-x64.exe).
 
-On the last stage of the installation wizard, [rdk install should be checked](https://replayable.io/replay/6301cfb5c9b98e006759ec55/?share=lNypRQvCQBmwcOu8GFpdYQ) by default. Hit enter when prompted and don't specify which component to install.
+  On the last stage of the installation wizard, [rdk install should be checked](https://replayable.io/replay/6301cfb5c9b98e006759ec55/?share=lNypRQvCQBmwcOu8GFpdYQ) by default. Hit enter when prompted and don't specify which component to install.
 
 5. Install bundler and jekyll gems.
 
@@ -143,7 +143,7 @@ On the last stage of the installation wizard, [rdk install should be checked](ht
 gem install jekyll bundler
 ```
 
-Check if Jekyll has been installed properly by entering `jekyll -v` in [your terminal](https://replayable.io/replay/6301d641c9b98e006759ec56/?share=Krqcj3vLWFSosyUgHzA4vA).
+  Check if Jekyll has been installed properly by entering `jekyll -v` in [your terminal](https://replayable.io/replay/6301d641c9b98e006759ec56/?share=Krqcj3vLWFSosyUgHzA4vA).
 
 
 6. Enter the project directory and install project gem dependencies via bundler.
@@ -164,7 +164,7 @@ npm install
 npm run start
 ```
 
-Enter `http://localhost:3000` in your browser and [everything should work](https://replayable.io/replay/6301e1e414ebd00066b58470/?share=dBEQn0RalVkM16fxamUw)!
+  Enter `http://localhost:3000` in your browser and [everything should work](https://replayable.io/replay/6301e1e414ebd00066b58470/?share=dBEQn0RalVkM16fxamUw)!
 
 ## Building locally
 
