@@ -77,7 +77,7 @@ To run this app locally, you'll first need a copy of Tabler's source files. Clon
 
 **MacOS users**:
 
-1. Make sure you have node installed. Enter the project directory and install dependencies via NPM.
+1. Make sure you have Node.js installed. Enter the project directory and install local dependencies via NPM.
 
 ```shell
 npm install
@@ -91,7 +91,9 @@ You can also install Ruby via Homebrew. The recommended Ruby version is 2.7.*
 brew install ruby @2.7
 ```
 
-Don't forget to [apply ruby to your shell path and restart the terminal](https://replayable.io/replay/62febe988c7631006765f9f3/?share=0loEq8x5fw5qeJyP9ALO8A). Let's do a [sanity check.](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ).
+Don't forget to [apply ruby to your shell path](https://replayable.io/replay/62febe988c7631006765f9f3/?share=0loEq8x5fw5qeJyP9ALO8A) and restart the terminal.
+
+Let's first do a [sanity check!](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ).
 
 ```shell
 which ruby
@@ -117,7 +119,7 @@ bundle install
 npm run start
 ```
 
-Enter `http://localhost:3000` in your browser and [everything should work!](https://replayable.io/share/AlgdZGgYZooiVTbtoHg).
+Enter `http://localhost:3000` in your browser and [everything should work!](https://replayable.io/share/AlgdZGgYZooiVTbtoHg)
 
 **Windows users**:
 
@@ -141,7 +143,7 @@ On the last stage of the installation wizard, [rdk install should be checked by 
 gem install jekyll bundler
 ```
 
-Check if Jekyll has been installed properly by [entering `jekyll -v`](https://replayable.io/replay/6301d641c9b98e006759ec56/?share=Krqcj3vLWFSosyUgHzA4vA).
+Check if Jekyll has been installed properly by entering `jekyll -v` in [your terminal](https://replayable.io/replay/6301d641c9b98e006759ec56/?share=Krqcj3vLWFSosyUgHzA4vA).
 
 
 6. Enter the project directory and install project gem dependencies via bundler.
