@@ -93,7 +93,7 @@ brew install ruby @2.7
 
 - Don't forget to [apply ruby to your shell path](https://replayable.io/replay/62febe988c7631006765f9f3/?share=0loEq8x5fw5qeJyP9ALO8A) and restart the terminal.
 
-- Let's first do a [sanity check](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ)!
+Let's first do a [sanity check](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ)!
 
 ```shell
 which ruby
