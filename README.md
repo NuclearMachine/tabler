@@ -20,14 +20,14 @@ A premium and open source dashboard template with a responsive and high-quality 
 </p>
 
 
-## 🔎 Preview
+## Preview
 
 Tabler is fully responsive and compatible with all modern browsers. Thanks to its modern, user-friendly design you can create a fully functional interface that users will love! Choose the layouts and components you need and customize them to make your design consistent and eye-catching. Every component has been created with attention to detail to make your interface beautiful! <a href="https://preview.tabler.io">Show me demo</a>
 
 <a href="https://preview.tabler.io" target="_blank"><img src="https://raw.githubusercontent.com/tabler/tabler/dev/src/static/tabler-preview.png" alt="Tabler preview"></a>
 
 
-## 🚀 Features
+## Features
 
 We've created this admin panel for everyone who wants to create templates based on our pre-made components. Our mission is to deliver a user-friendly, clear and easy administration panel that can be used by both simple websites and sophisticated systems. The only requirement is basic HTML and CSS (and some [Liquid](https://github.com/Shopify/liquid/wiki)) knowledge — as a reward, you'll be able to manage and visualize different types of data in the easiest possible way!
 
@@ -38,15 +38,12 @@ We've created this admin panel for everyone who wants to create templates based 
 * **Demo pages**: Tabler features over 20 individual pages using various components, which gives you the freedom to choose and combine. All components can vary in color and styling that you can easily modify using Sass. Sky is the limit!
 * **Single Page Application versions:** [Tabler React](https://github.com/tabler/tabler-react) has React components for Tabler.
 
-## 📖 Documentation
+
+## Documentation
 
 Documentation is available as a part of Tabler preview: https://preview.tabler.io/docs/
 
-## 🪴 Project Activity
-
-![Alt](https://repobeats.axiom.co/api/embed/61d1db34446967b0848af68198a392067e0f5870.svg "Repobeats analytics image")
-
-## 💕 Sponsor Tabler
+## Sponsor Tabler
 
 <a href="https://github.com/sponsors/codecalm" target="_blank"><img src="/src/static/sponsor-banner-readme.png?raw=true" alt="Sponsor Tabler" /></a>
 
@@ -67,56 +64,113 @@ Support this project by becoming a sponsor. Your logo will show up in this READM
 <a href="https://opencollective.com/tabler/tiers/sponsor/9/website" target="_blank"><img src="https://opencollective.com/tabler/tiers/sponsor/9/avatar.svg" /></a>
 
 
-## 📦 Setup environment
+## Getting Started
 
-To use our build system and run our documentation locally, you'll need a copy of Tabler's source files. Follow the steps below:
+To run this app locally, you'll first need a copy of Tabler's source files. Clone this repo and follow the steps below:
 
-1. [Install Node.js](https://nodejs.org/download/), which we use to manage our dependencies.
+### General
+
+1. [Install Node.js](https://nodejs.org/download/), which we use to manage our dependencies. We recommend using a version manager like [NVM](https://github.com/nvm-sh/nvm) to install Node.js.
 2. Navigate to the root `/tabler` directory and run `npm install` to install our local dependencies listed in `package.json`.
 3. [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/) - the recommended version is [2.7.6](https://cache.ruby-lang.org/pub/ruby/2.7/ruby-2.7.6.tar.gz).
-4. [Install Bundler](https://bundler.io) with `gem install bundler` and finally run `bundle install`. It will install all Ruby dependencies, such as [Jekyll and plugins](https://jekyllrb.com).
+4. [Install Bundler](https://bundler.io) with `gem install bundler` and finally run `bundle install`. It will install all Ruby dependencies, including [Jekyll and plugins](https://jekyllrb.com).
 
-**OSX users**:
+### MacOS users
 
-1. NPM ```npm install```
-2. install Ruby (2.5.* recommended)
-	```brew install ruby @2.5```
-3. install bundler
-	```gem install bundler```
-4. install
-	```bundle install```
-- if bundler get any errors try
+1. Make sure you have Node.js installed. Enter the project directory and install local dependencies via NPM.
+
+```shell
+npm install
 ```
-sudo rm -rf /Library/Developer/CommandLineTools
-sudo xcode-select --install
+
+2. For security and ease of installation, avoid the pre-installed version of Ruby that comes with macOS. Use a version manager such as [rbenv](https://collectionbuilder.github.io/cb-docs/docs/software/ruby_mac/), or [RVM](https://rvm.io/rvm/install).
+
+- You can also install Ruby via Homebrew. The recommended Ruby version is 2.7.*
+
+```shell
+brew install ruby @2.7
 ```
-5. Run NPM
-	```npm run start```
+
+Don't forget to [apply ruby to your shell path](https://replayable.io/replay/62febe988c7631006765f9f3/?share=0loEq8x5fw5qeJyP9ALO8A) and restart the terminal.
+
+Let's first do a [sanity check](https://replayable.io/replay/62feb54a8c7631006765f9f1/?share=jyhehNWV0geoVtfcx1fbzQ)!
+
+```shell
+which ruby
+```
+
+If you see `/usr/bin/ruby` when you use the which command, then the initial installation has failed. It is the pre-installed macOS system Ruby.
+
+3. Install the bundler gem.
+
+```shell
+gem install bundler
+```
+
+4. Install project gem dependencies via bundler.
+
+```shell
+bundle install
+```
+
+5. Finally, launch the app.
+
+```shell
+npm run start
+```
+
+Enter `http://localhost:3000` in your browser and [everything should work!](https://replayable.io/share/AlgdZGgYZooiVTbtoHg)
+
+### Windows users
+
+1. [Install Git SCM](https://git-scm.com/download/win) and take note of the installation directory. By default it's `C:\Program Files\Git`.
+
+2. Install [Node.js & NPM](https://nodejs.org/en/download/).
+
+3. By default, NPM run-scripts is set to CMD. [Configure NPM to use bash](https://replayable.io/replay/6301bdb7c417160066fb88e3/?share=jKEugkJ23Fe3dANIt2s8nA) which comes with Git SCM. Double-check the noted installation directory from step 1.
+
+```shell
+npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"
+```
+
+4. [Install Ruby+Devkit](https://rubyinstaller.org/downloads/) - the recommended version is [2.7.6](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.6-1/rubyinstaller-devkit-2.7.6-1-x64.exe).
+
+- On the last stage of the installation wizard, [rdk install should be checked](https://replayable.io/replay/6301cfb5c9b98e006759ec55/?share=lNypRQvCQBmwcOu8GFpdYQ) by default. Hit enter when prompted and don't specify which component to install.
+
+5. Install bundler and jekyll gems.
+
+```
+gem install jekyll bundler
+```
+
+- Check if Jekyll has been installed properly by entering `jekyll -v` in [your terminal](https://replayable.io/replay/6301d641c9b98e006759ec56/?share=Krqcj3vLWFSosyUgHzA4vA).
 
 
-**Windows users**:
+6. Enter the project directory and install project gem dependencies via bundler.
 
-1. [Install Git](https://git-scm.com/download/win) in `C:\Program Files\git\bin` directory and run `npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"` to change the default shell.
-2. [Install Ruby+Devkit](https://rubyinstaller.org/downloads/) - the recommended version is [2.7.6](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.6-1/rubyinstaller-devkit-2.7.6-1-x64.exe).
-3. [Read guide](https://jekyllrb.com/docs/installation/windows/) to get Jekyll up and running without problems.
+```shell
+bundle install
+```
 
-Once you complete the setup, you'll be able to run the various commands provided from the command line.
+7. Install npm packages.
 
+```shell
+npm install
+```
 
-## Build locally
+8. Finally, launch the app.
 
-You need to have `npm` and `bundler` installed.
+```shell
+npm run start
+```
 
-1. From the root `/tabler` directory, run installation in the command line:
-  - `npm install` 
-  - `bundler install` 
-2. Then execute `npm run start-plugins` to start up the application stack.
-3. Open [http://localhost:3000](http://localhost:3000) in your browser, and voilà.
-4. Any change in the `/src` directory will build the application and refresh the page.
+Enter `http://localhost:3000` in your browser and [everything should work](https://replayable.io/replay/6301e1e414ebd00066b58470/?share=dBEQn0RalVkM16fxamUw)!
 
-**Note**:
-Run `npm run build` for reforms a one off build application without refresh.
-Open [http://localhost:3001](http://localhost:3001) to configure the Web server.
+### Building locally
+
+If you want to build locally, then execute `npm run start-plugins` to start up the application stack versus `npm run start`. That way any change in the `/src` directory will build the application and refresh the page. Open [http://localhost:3001](http://localhost:3001) if you want to configure the web server.
+
+Alternatively, running `npm run build` will [generate a local folder](https://replayable.io/replay/6301ea446a92ca00686c2470/?share=8BoFw4QCovXc4fFaY68v0w) called demo so you can run the app independently. Open the `index.html` inside the generated folder to get started.
 
 ## Installation
 
@@ -125,26 +179,6 @@ Tabler is distributed via npm.
 ```sh
 npm install --save @tabler/core
 ```
-
-## Running with Docker
-
-If you don't want to install node/npm/ruby and the dependencies on your local environment, you can use the provided Dockerfile to build a docker image.
-This Dockerfile is provided as an example to spin-up a container running Tabler.
-
-Example of how to use this image:
-
-1. Build the tabler image : `docker build -t tabler .`
-2. Run the tabler image while mounting the `src` directory as well as the `_config.yml` file into the container.
-
-Don't forget to expose the port 3000 so you can browse the website locally.
-You can also expose the port 3001 to have access to BrowserSync
-
-```sh
-docker run -p 3000:3000 -p 3001:3001 -v $(pwd)/src:/app/src -v $(pwd)/_config.yml:/app/_config.yml tabler
-```
-
-Now open your browser to [http://localhost:3000](http://localhost:3000). Edit anything in the `src/` folder and watch your browser refresh the page after it has been rebuilt.
-
 
 ### CDN support
 
@@ -172,7 +206,7 @@ https://tabler.canny.io/feature-requests
 Found a bug or have a feature request? [Please open a new issue](https://github.com/tabler/tabler/issues/new).
 
 
-## 🤓 Creators
+## Creators
 
 **Paweł Kuna**
 
@@ -181,19 +215,19 @@ Found a bug or have a feature request? [Please open a new issue](https://github.
 - <https://codecalm.net>
 
 
-## 👨‍🚀 Contributors
+### Contributors
 
 This project exists thanks to all the people who contribute.
 
 <img src="https://opencollective.com/tabler/contributors.svg?width=890&button=false" />
 
-## 🌸 Backers
+### Backers
 
 Thank you to all our backers! 🙏 [Become a backer](https://opencollective.com/tabler#backer)
 
 <a href="https://opencollective.com/tabler#backers" target="_blank"><img src="https://opencollective.com/tabler/tiers/backer.svg?width=890&button=false" /></a>
 
-## ❤️ Thanks
+## Thanks
 
 <a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
 
